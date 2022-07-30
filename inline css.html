@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS Styling</title>
+    <style>
+        /* * {
+    border: 0;
+    padding: 0;
+} */
+
+em {
+    color: blueviolet;
+}
+
+i {
+    background-color: blueviolet;
+    color: #fff;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.other-styles button:nth-child(1) {
+    background-color: brown;
+    border: none;
+}
+
+.other-styles button:nth-child(2) {
+    background-color: yellowgreen;
+    border: none;
+}
+
+.form h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: blueviolet;
+    background-color: rgb(225, 203, 247);
+    padding: 10px 5px;
+    margin: 0;
+}
+
+button {
+    padding-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+button[type="submit"] {
+    text decoration: none;
+    background-color: blueviolet;
+    color: beige;
+    border: none;
+}
+    </style>
+</head>
+<body>
+    <div class="inline">
+        <h1>This page contains <em style="color: yellowgreen">Inline CSS</em></h1>
+
+        <p>
+            This type of CSS stylesheet makes reference to its stylesheet inside of its html tags using this <i style="background-color: yellowgreen; color: #fff;
+            padding: 5px;">  <code>"<"style">"<"/style> tag"</code></i>
+        </p>
+    </div>
+
+    <div class="form">
+        <h3 style="font-weight: 700; text-transform: uppercase;
+        color: yellowgreen; background-color: rgb(227, 236, 207); padding: 10px 5px; margin: 0;">Fill in the details below</h3> <br/>
+        <form action="#">
+            Full Name: <br />
+            <input type="text" name="fullname" id="fullname" placeholder="Enter your name"> <br />
+            Email: <br /> <input type="email" name="email" id="email" placeholder="Enter your email address"> <br />
+            Date Of Birth: <br /> <input type="text" name="dob" id="dob" placeholder="Enter your birth date"> <br />
+            Phone Number: <br /> <input type="text" name="phone" id="phone" placeholder="Enter your phone number"> <br />
+            Address: <br /> <input type="text" name="address" id="address" placeholder="Enter your address"> <br />
+            Password: <br /> <input type="password" name="password" id="password" placeholder="Enter your password"> <br /> <br />
+            <button type="submit" name="submit" id="submit" class="btn btn-primary" style="text decoration: none; background-color: yellowgreen; color: white; border: none;">Submit</button>
+
+    </div>
+    <hr>
+    <div class="other-styles">
+        <button type="button"><a href="./index.html">External Styling</a></button>
+        <button type="button" style="background-color: blueviolet; border: none;"><a href="./internal css.html">Internal Styling</a></button>
+    </div>
+</body>
+</html>
